@@ -360,10 +360,38 @@ socket, so nothing reaches the network. `bin/matrix` uses rbenv for the Rubies a
 
 ## Contributing
 
-Bug reports and pull requests are welcome on
-[GitHub](https://github.com/blaz1988/rails-agent-console/issues). See
-[CONTRIBUTING.md](CONTRIBUTING.md) for how to get started, and [SECURITY.md](SECURITY.md) for
-reporting a vulnerability privately.
+Contributions are very welcome, whether it's a bug report, a question the gem answered wrong, a
+new provider or a fix in the rewriter. You don't need permission to start.
+
+**Found a problem?** [Open an issue](https://github.com/blaz1988/rails-agent-console/issues/new)
+with your Ruby, Rails and gem versions, the question you asked, the query the gem proposed and
+what went wrong. A wrong answer from the model is a useful report too: most of them can be
+fixed in code so the next person doesn't hit them.
+
+**Want to send a fix?** Contributions go through a fork and a pull request:
+
+1. [Fork the repository](https://github.com/blaz1988/rails-agent-console/fork) and clone your
+   fork.
+2. Create a branch for your change: `git checkout -b fix-date-ranges`.
+3. Run `bin/setup`, make the change, and add a spec for it.
+4. Run `bundle exec rake` and make sure specs and RuboCop pass.
+5. Add a line to the `Unreleased` section of [CHANGELOG.md](CHANGELOG.md).
+6. Push the branch to your fork and
+   [open a pull request](https://github.com/blaz1988/rails-agent-console/compare) against `main`.
+
+CI runs the specs on every supported Ruby and Rails version, and every pull request is reviewed
+before it's merged. For a larger change, such as a new provider or a new console command, open
+an issue first so we can agree on the approach before you write the code.
+
+Good first contributions:
+
+- a question that produced the wrong query, turned into a failing spec;
+- a correction in the rewriter for a mistake models keep making;
+- support for another LLM provider;
+- clearer docs or error messages.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the details. Please report security issues privately
+as described in [SECURITY.md](SECURITY.md), not in a public issue.
 
 ## About Rubycode
 

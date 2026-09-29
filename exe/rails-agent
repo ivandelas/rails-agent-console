@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "rails_agent_console"
+require "rails_agent_console/cli"
+
+exit RailsAgentConsole::CLI.new(ARGV).run

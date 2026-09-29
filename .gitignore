@@ -1,0 +1,15 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# A library resolves dependencies fresh in CI.
+/Gemfile.lock
+
+# Per-Rails lockfiles from bin/matrix.
+gemfiles/*.lock
+*.gem
